@@ -6,23 +6,23 @@
 
 - List interfaces with detailed info:
 
-`ip address`
+`ip a`
 
 - List interfaces with brief network layer info:
 
-`ip -brief address`
+`ip -br address`
 
 - List interfaces with brief link layer info:
 
-`ip -brief link`
+`ip -br link`
 
 - Display the routing table:
 
-`ip route`
+`ip r`
 
 - Show neighbors (ARP table):
 
-`ip neighbour`
+`ip n`
 
 - Make an interface up/down:
 
@@ -30,8 +30,12 @@
 
 - Add/Delete an IP address to an interface:
 
-`ip addr add/del {{ip}}/{{mask}} dev {{interface}}`
+`ip a add/del {{ip}}/{{mask}} dev {{interface}}`
 
 - Add a default route:
 
-`ip route add default via {{ip}} dev {{interface}}`
+`ip r add default via {{ip}} dev {{interface}}`
+
+- Flush allinterface's ip
+
+`ip a fl dev enp5s0`
